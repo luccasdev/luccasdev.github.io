@@ -1,10 +1,13 @@
-# Hi, this is my responsive portfolio website
+# Hi, this is my responsive portfolio website 
+## Frontend repository
 <b> I developed in open source, to help new developers</b>
 <br>
-You can access [Clicking Here](https://luccasdev.github.io)
+You can access preview [Clicking Here](https://luccasdev.github.io)
 
 ## Technologies used 
 - Angular 9
+- Java 11
+- Spring Boot
 - Medium API Integration (In progress)
 - Web Service for e-mail communication (In progress)
 
