@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationBarComponent implements OnInit {
 
   showToggleMenu = false;
+  menuTypes = MenuTypeEnum;
+  selectedNavigationMenuType: MenuTypeEnum = MenuTypeEnum.ABOUT;
 
   constructor() { }
 
@@ -17,4 +19,18 @@ export class NavigationBarComponent implements OnInit {
   toggleMenu() {
     this.showToggleMenu = !this.showToggleMenu;
   }
+
+  changeNavigation(menuType: MenuTypeEnum) {
+    this.selectedNavigationMenuType = menuType;
+  }
 }
+
+export enum MenuTypeEnum {
+  ABOUT,
+  SKILLS,
+  EXPERIENCE,
+  PROJECTS,
+  ARTICLES,
+  CONTACT
+}
+

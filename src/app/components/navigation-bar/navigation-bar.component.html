@@ -4,12 +4,12 @@
     <button *ngIf="showToggleMenu" (click)="toggleMenu()" class="navigation-menu-button opened"></button>
   </div>
   <div *ngIf="showToggleMenu" class="navigation-menu-buttons-popup">
-    <div class="navigation-button-inside-menu">Sobre</div>
-    <div class="navigation-button-inside-menu">Skills</div>
-    <div class="navigation-button-inside-menu">Experiência</div>
-    <div class="navigation-button-inside-menu">Projetos</div>
-    <div class="navigation-button-inside-menu">Artigos</div>
-    <div class="navigation-button-inside-menu">Contato</div>
+    <div [class.active]="selectedNavigationMenuType === menuTypes.ABOUT" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.ABOUT)">Sobre</div>
+    <div [class.active]="selectedNavigationMenuType === menuTypes.SKILLS" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.SKILLS)">Skills</div>
+    <div [class.active]="selectedNavigationMenuType === menuTypes.EXPERIENCE" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.EXPERIENCE)">Experiência</div>
+    <div [class.active]="selectedNavigationMenuType === menuTypes.PROJECTS" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.PROJECTS)">Projetos</div>
+    <div [class.active]="selectedNavigationMenuType === menuTypes.ARTICLES" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.ARTICLES)">Artigos</div>
+    <div [class.active]="selectedNavigationMenuType === menuTypes.CONTACT" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.CONTACT)">Contato</div>
   </div>
   <div class="navigation-bar-image">
     <img src="assets/lucas.svg"/>
@@ -22,12 +22,12 @@
     </span>
     </div>
     <div class="navigation-button-group">
-      <div class="navigation-button">Sobre</div>
-      <div class="navigation-button">Skills</div>
-      <div class="navigation-button">Experiência</div>
-      <div class="navigation-button">Projetos</div>
-      <div class="navigation-button">Artigos</div>
-      <div class="navigation-button">Contato</div>
+      <div [class.active]="selectedNavigationMenuType === menuTypes.ABOUT" class="navigation-button" (click)="changeNavigation(menuTypes.ABOUT)">Sobre</div>
+      <div [class.active]="selectedNavigationMenuType === menuTypes.SKILLS" class="navigation-button" (click)="changeNavigation(menuTypes.SKILLS)">Skills</div>
+      <div [class.active]="selectedNavigationMenuType === menuTypes.EXPERIENCE" class="navigation-button" (click)="changeNavigation(menuTypes.EXPERIENCE)">Experiência</div>
+      <div [class.active]="selectedNavigationMenuType === menuTypes.PROJECTS" class="navigation-button" (click)="changeNavigation(menuTypes.PROJECTS)">Projetos</div>
+      <div [class.active]="selectedNavigationMenuType === menuTypes.ARTICLES" class="navigation-button" (click)="changeNavigation(menuTypes.ARTICLES)">Artigos</div>
+      <div [class.active]="selectedNavigationMenuType === menuTypes.CONTACT" class="navigation-button" (click)="changeNavigation(menuTypes.CONTACT)">Contato</div>
     </div>
   </div>
 </div>

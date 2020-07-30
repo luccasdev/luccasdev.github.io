@@ -35,6 +35,14 @@
   border-color: transparent;
   border-style: solid;
   border-width: 1px;
+  &.active {
+    background-color: #1E1E1E;
+    border-color: #00BE7A;
+    border-style: solid;
+    border-width: 1px;
+    color: #00BE7A;
+    cursor: pointer;
+  }
 }
 
 .navigation-button:hover {
@@ -100,6 +108,14 @@
   border-color: transparent;
   border-style: solid;
   border-width: 1px;
+  &.active {
+      background-color: #1E1E1E;
+      border-color: #00BE7A;
+      border-style: solid;
+      border-width: 1px;
+      color: #00BE7A;
+      cursor: pointer;
+  }
 }
 .navigation-button-inside-menu:hover {
   background-color: #1E1E1E;
