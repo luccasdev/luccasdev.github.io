@@ -1,27 +1,26 @@
-# Luccasdev
+# Hi, this is my responsive portfolio website
+<b> I developed in open source, to help new developers</b>
+<br>
+You can access [Clicking Here](https://luccasdev.github.io)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+## Technologies used 
+- Angular 9
+- Medium API Integration (In progress)
+- Web Service for e-mail communication (In progress)
 
-## Development server
+## Prototype
+You can access prototype in <b>Figma</b> [Clicking Here](https://www.figma.com/proto/PNu110A4QRZdh4E2LZ9z1q/Portfolio-LuccasDev?node-id=35%3A171&scaling=scale-down-width)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Screenshots:
 
-## Code scaffolding
+<img src="https://i.imgur.com/uWykDFq.png">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img src="https://i.imgur.com/kI1lLI1.png">
 
-## Build
+<img src="https://i.imgur.com/O8U7vCg.png">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<img src="https://i.imgur.com/IMpZEAl.png">
 
-## Running unit tests
+<img src="https://i.imgur.com/AkWPjfE.png">
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<img src="https://i.imgur.com/17zgcHJ.png">
