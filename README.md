@@ -5,10 +5,10 @@
 You can access preview [Clicking Here](https://luccasdev.github.io)
 
 ## Technologies used 
-- Angular 9
-- Java 11
-- Spring Boot
-- Medium API Integration (In progress)
+- <img width="32" height="32" src="https://worldvectorlogo.com/logos/angular-icon-1.svg"></a> Angular 9
+- <img width="32" height="32" src="https://cdn.worldvectorlogo.com/logos/java-4.svg"></a> Java 11
+- <img width="32" height="32" src="https://cdn.worldvectorlogo.com/logos/spring-3.svg"></a> Spring Boot
+- <img width="32" height="32" src="https://cdn.worldvectorlogo.com/logos/monogram-medium.svg"></a> Medium API Integration (In progress)
 - Web Service for e-mail communication (In progress)
 - GitHub API Integration (In progress)
 - Heroku
