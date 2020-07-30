@@ -62,6 +62,17 @@
   padding: 10px;
 }
 
+.navigation-menu-button {
+  background-image: url('/assets/svg/menu.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+  display: none;
+  border: none;
+  outline: none;
+}
+
 @media screen and (max-width: 1101px) {
   .navigation-bar {
     text-align: center;
@@ -90,4 +101,15 @@
     font-size: 20px;
   }
 
+  .navigation-menu-button {
+    display: block;
+  }
 }
+
+.navigation-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
