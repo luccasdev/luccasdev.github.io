@@ -1,3 +1,5 @@
+@import "src/shared/variables";
+
 * {
   box-sizing: border-box;
 }
@@ -5,9 +7,33 @@
 body {
   background-color: #232427;
   color: white;
-  font-family: 'Roboto Mono', monospace;
+  font-family: $default-font-family;
 }
 
+b {
+  font-weight: bold;
+}
 .content-wrapper {
-  padding: 20px;
+  padding: 30px;
+}
+
+.title {
+  font-size: 44px;
+  font-family: $default-font-family;
+  color: $primary-color;
+  font-weight: 200;
+}
+@media screen and (max-width: $max-width-to-mobile-view) {
+  .title {
+    text-align: center;
+  }
+}
+.normal-text {
+  font-size: 17px;
+  font-family: $default-font-family;
+  color: $secondary-color;
+  font-weight: 300;
+  white-space: pre-wrap;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }

@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {NavigationBarComponent} from './navigation-bar/navigation-bar.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 
 @NgModule({
   declarations: [
-    NavigationBarComponent
+    NavigationBarComponent,
+    AboutMeComponent
   ],
   exports: [
-    NavigationBarComponent
+    NavigationBarComponent,
+    AboutMeComponent
   ],
   imports: [
     CommonModule
