@@ -10,7 +10,8 @@ You can access preview [Clicking Here](https://luccasdev.github.io)
 - Spring Boot
 - Medium API Integration (In progress)
 - Web Service for e-mail communication (In progress)
-
+- GitHub API Integration (In progress)
+- Heroku
 ## Architecture
 <img src="https://i.imgur.com/WqpeWRD.png"/>
 
