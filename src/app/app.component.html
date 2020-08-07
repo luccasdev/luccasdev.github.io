@@ -1,4 +1,4 @@
-<app-navigation-bar></app-navigation-bar>
+<app-navigation-bar *ngIf="specificMenu" [selectedNavigationMenu]="specificMenu" (changeNavigationEvent)="onChangeNavigation($event)"></app-navigation-bar>
 
 <app-about-me></app-about-me>
 

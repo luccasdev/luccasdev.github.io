@@ -4,12 +4,9 @@
     <button *ngIf="showToggleMenu" (click)="toggleMenu()" class="navigation-menu-button opened"></button>
   </div>
   <div *ngIf="showToggleMenu" class="navigation-menu-buttons-popup">
-    <div [class.active]="selectedNavigationMenuType === menuTypes.ABOUT" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.ABOUT)">Sobre</div>
-    <div [class.active]="selectedNavigationMenuType === menuTypes.SKILLS" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.SKILLS)">Skills</div>
-    <div [class.active]="selectedNavigationMenuType === menuTypes.EXPERIENCE" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.EXPERIENCE)">Experiência</div>
-    <div [class.active]="selectedNavigationMenuType === menuTypes.PROJECTS" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.PROJECTS)">Projetos</div>
-    <div [class.active]="selectedNavigationMenuType === menuTypes.ARTICLES" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.ARTICLES)">Artigos</div>
-    <div [class.active]="selectedNavigationMenuType === menuTypes.CONTACT" class="navigation-button-inside-menu" (click)="changeNavigation(menuTypes.CONTACT)">Contato</div>
+    <div *ngFor="let menu of menuOptions">
+      <div *ngIf="menuOptions.length > 0" [class.active]="selectedNavigationMenu.type === menu.type" class="navigation-button-inside-menu" (click)="changeNavigation(menu)">{{menu.label}}</div>
+    </div>
   </div>
   <div class="navigation-bar-image">
     <img src="assets/svg/lucas.svg" alt="image-about-me"/>
@@ -22,12 +19,9 @@
     </span>
     </div>
     <div class="navigation-button-group">
-      <div [class.active]="selectedNavigationMenuType === menuTypes.ABOUT" class="navigation-button" (click)="changeNavigation(menuTypes.ABOUT)">Sobre</div>
-      <div [class.active]="selectedNavigationMenuType === menuTypes.SKILLS" class="navigation-button" (click)="changeNavigation(menuTypes.SKILLS)">Skills</div>
-      <div [class.active]="selectedNavigationMenuType === menuTypes.EXPERIENCE" class="navigation-button" (click)="changeNavigation(menuTypes.EXPERIENCE)">Experiência</div>
-      <div [class.active]="selectedNavigationMenuType === menuTypes.PROJECTS" class="navigation-button" (click)="changeNavigation(menuTypes.PROJECTS)">Projetos</div>
-      <div [class.active]="selectedNavigationMenuType === menuTypes.ARTICLES" class="navigation-button" (click)="changeNavigation(menuTypes.ARTICLES)">Artigos</div>
-      <div [class.active]="selectedNavigationMenuType === menuTypes.CONTACT" class="navigation-button" (click)="changeNavigation(menuTypes.CONTACT)">Contato</div>
+      <div *ngFor="let menu of menuOptions">
+        <div *ngIf="menuOptions.length > 0" [class.active]="selectedNavigationMenu.type === menu.type" class="navigation-button-inside-menu" (click)="changeNavigation(menu)">{{menu.label}}</div>
+      </div>
     </div>
   </div>
 </div>

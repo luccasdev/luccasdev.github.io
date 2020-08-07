@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
-import {ComponentsModule} from './components/components.module';
+import { ComponentsModule } from './components/components.module';
+import { MenuService } from '../shared/services/menu.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import {ComponentsModule} from './components/components.module';
     AppRoutingModule,
     ComponentsModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

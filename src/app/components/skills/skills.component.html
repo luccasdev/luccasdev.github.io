@@ -1,7 +1,10 @@
-<div class="session">
+<div id="skills"
+     (scroll)="onScroll($event)"
+     [scrollTop]="scrollTopPosition"
+     class="session">
   <h3 class="title">Skills</h3>
-  <div class="row">
-    <div class="col-lg-6">
+  <div class="row mb-5">
+    <div class="col-lg-6 mb-5">
       <div class="row">
         <div class="col-12 text-center">
           <h4 class="skills-title mt-4"><b>Java</b> - Nível: Avançado</h4>
@@ -14,6 +17,151 @@
         <div class="col-sm-6 progress-bar-container">
           <p class="mb-2">100%</p>
           <div class="progress-bar-100-percent"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <ul class="skills-description-list">
+            <li>Conhecimentos avançados em Java 8+ </li>
+            <li>Utilização de boas práticas, Design Patterns e Clean Code.</li>
+            <li>Conhecimentos sobre Java Virtual Machine (JVM) e seu funcionamento.</li>
+            <li>Conhecimentos sobre Algoritmos de Ordenação e suas complexidades.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="skills-title mt-4"><b>Spring Framework</b> - Nível: Avançado</h4>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-sm-2 text-center">
+          <img src="assets/svg/spring-logo.svg" alt="spring-logo"/>
+        </div>
+        <div class="col-sm-6 progress-bar-container">
+          <p class="mb-2">100%</p>
+          <div class="progress-bar-100-percent"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <ul class="skills-description-list">
+            <li>Conhecimentos avançados em Spring e suas tecnologias.</li>
+            <li>Desenvolvimento de aplicações com Spring (Data, JPA, Security, Batch, Cloud, etc.)</li>
+            <li>Criação de API’s com boas práticas.</li>
+            <li>Experiência com Micro-serviços na prática utilizando Spring Cloud  e Netflix OSS.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-lg-6 mb-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="skills-title mt-4"><b>Angular</b> - Nível: Avançado</h4>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-sm-2 text-center">
+          <img src="assets/svg/angular-logo.svg" alt="angular-logo"/>
+        </div>
+        <div class="col-sm-6 progress-bar-container">
+          <p class="mb-2">100%</p>
+          <div class="progress-bar-100-percent"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <ul class="skills-description-list">
+            <li>Conhecimentos avançados em Angular 2+ </li>
+            <li>Utilização de boas práticas, padrões e organização de projeto.</li>
+            <li>Experiência com componentização de projeto, objetivando reaproveitamento e melhor aproveitamento de código.</li>
+            <li>Conhecimentos avançados em HTML, CSS e TypeScript.</li>
+            <li>Noções básicas de UX/UI e ferramentas como Figma e Adobe XD.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="skills-title mt-4"><b>NodeJS</b> - Nível: Intermediário</h4>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-sm-2 text-center">
+          <img src="assets/svg/nodejs-logo.svg" alt="nodejs-logo"/>
+        </div>
+        <div class="col-sm-6 progress-bar-container">
+          <p class="mb-2">70%</p>
+          <div class="progress-bar-70-percent"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <ul class="skills-description-list">
+            <li>Conhecimentos intermediários em NodeJS.</li>
+            <li>Utilização de boas práticas, padrões e organização de projeto.</li>
+            <li>Criação de API’s com boas práticas.</li>
+            <li>Conhecimentos em integrações com banco de dados.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-lg-6 mb-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="skills-title mt-4"><b>Amazon Web Services</b> - Nível: Básico</h4>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-sm-2 text-center">
+          <img src="assets/svg/aws-logo.svg" alt="aws-logo"/>
+        </div>
+        <div class="col-sm-6 progress-bar-container">
+          <p class="mb-2">50%</p>
+          <div class="progress-bar-50-percent"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <ul class="skills-description-list">
+            <li>Conhecimentos básicos em AWS</li>
+            <li>Experiência com deploy de aplicações em ambientes de produção.</li>
+            <li>Experiência com Console AWS para gerenciar serviços utilizados em produção.</li>
+            <li>Experiência com serviços como Elastic beanstalk, EC2, Lambda, S3 e Cloud Front.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="skills-title mt-4"><b>Google Cloud</b> - Nível: Básico</h4>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-sm-2 text-center">
+          <img src="assets/svg/gcp-logo.svg" alt="gcp-logo"/>
+        </div>
+        <div class="col-sm-6 progress-bar-container">
+          <p class="mb-2">50%</p>
+          <div class="progress-bar-50-percent"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <ul class="skills-description-list">
+            <li>Conhecimentos básicos em Google Cloud.</li>
+            <li>Experiência com deploy de aplicações em ambientes de produção.</li>
+            <li>Experiência com Console GCP para gerenciar serviços utilizados em produção.</li>
+            <li>Experiência com serviços como Kubernetes, Compute Engine, Cloud Functions, Cloud Storage e Firebase.</li>
+          </ul>
         </div>
       </div>
     </div>

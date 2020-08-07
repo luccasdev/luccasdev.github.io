@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
+  scrollTopPosition = 0;
+
+  @Output() scrollChange = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onScroll(event: any) {
+    this.scrollTopPosition = event.target.scrollTop;
+    this.scrollChange.emit(event.target.scrollTop);
+  }
 }

@@ -1,17 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Menu, MenuService} from '../../../shared/services/menu.service';
 
 @Component({
   selector: 'app-navigation-bar',
   templateUrl: './navigation-bar.component.html',
-  styleUrls: ['./navigation-bar.component.scss']
+  styleUrls: ['./navigation-bar.component.scss'],
 })
 export class NavigationBarComponent implements OnInit {
 
   showToggleMenu = false;
-  menuTypes = MenuTypeEnum;
-  selectedNavigationMenuType: MenuTypeEnum = MenuTypeEnum.ABOUT;
 
-  constructor() { }
+  menuOptions: Menu[] = [];
+
+  @Input()
+  selectedNavigationMenu: Menu;
+
+  @Output()
+  changeNavigationEvent = new EventEmitter<Menu>();
+
+  constructor(private menuService: MenuService) {
+    this.menuOptions = menuService.getMenuOptions();
+  }
 
   ngOnInit(): void {
   }
@@ -20,17 +29,11 @@ export class NavigationBarComponent implements OnInit {
     this.showToggleMenu = !this.showToggleMenu;
   }
 
-  changeNavigation(menuType: MenuTypeEnum) {
-    this.selectedNavigationMenuType = menuType;
+  changeNavigation(menu: Menu) {
+    this.selectedNavigationMenu = menu;
+    this.changeNavigationEvent.emit(menu);
+    this.toggleMenu();
   }
-}
 
-export enum MenuTypeEnum {
-  ABOUT,
-  SKILLS,
-  EXPERIENCE,
-  PROJECTS,
-  ARTICLES,
-  CONTACT
 }
 
