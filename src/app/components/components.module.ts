@@ -5,6 +5,7 @@ import {NavigationBarComponent} from './navigation-bar/navigation-bar.component'
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 
@@ -13,13 +14,15 @@ import { ExperienceComponent } from './experience/experience.component';
     NavigationBarComponent,
     AboutMeComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent
   ],
   exports: [
     NavigationBarComponent,
     AboutMeComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule

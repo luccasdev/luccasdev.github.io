@@ -1,0 +1,55 @@
+@import "src/shared/variables";
+
+.title {
+  margin-bottom: 2em;
+}
+
+.session {
+  padding: 2%;
+  max-width: 100%;
+}
+
+.projects {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-container {
+  background-color: #27272b;
+  padding: 1em;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  margin: 0.4em;
+  cursor: pointer;
+}
+
+.project-header {
+  display: flex;
+}
+
+.project-title {
+  flex: 1;
+  font-size: 1.3em;
+}
+
+.button-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12.7%;
+}
+
+@media screen and (max-width: $max-width-to-mobile-view) {
+  .project-container {
+    width: 100%;
+    margin: 0 0 2em;
+  }
+  .session {
+    flex-direction: column;
+  }
+  .button-footer {
+    padding-right: 0;
+  }
+}
+
