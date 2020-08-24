@@ -1,88 +1,18 @@
 <div class="session" id="projects">
   <h3 class="title">Projetos Open Source</h3>
   <div class="projects">
-    <div class="project-container">
+    <div *ngFor="let project of projects" class="project-container">
       <div class="project-header">
-        <p class="project-title">Project Title</p>
+        <p class="project-title">{{project.title}}</p>
         <div class="project-stats">
           <img src="assets/svg/github-star.svg" alt="github-star"/>
-          <span class="ml-2 mr-4">6</span>
+          <span class="ml-2 mr-4">{{project.countStars}}</span>
           <img src="assets/svg/github-fork.svg" alt="github-fork"/>
-          <span class="ml-2">6</span>
+          <span class="ml-2">{{project.countForks}}</span>
         </div>
       </div>
       <div class="project-description">
-        <p>Descrição exemplo, exemplo exemplo de descrição.</p>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-header">
-        <p class="project-title">Project Title</p>
-        <div class="project-stats">
-          <img src="assets/svg/github-star.svg" alt="github-star"/>
-          <span class="ml-2 mr-4">6</span>
-          <img src="assets/svg/github-fork.svg" alt="github-fork"/>
-          <span class="ml-2">6</span>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>Descrição exemplo, exemplo exemplo de descrição.</p>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-header">
-        <p class="project-title">Project Title</p>
-        <div class="project-stats">
-          <img src="assets/svg/github-star.svg" alt="github-star"/>
-          <span class="ml-2 mr-4">6</span>
-          <img src="assets/svg/github-fork.svg" alt="github-fork"/>
-          <span class="ml-2">6</span>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>Descrição exemplo, exemplo exemplo de descrição.</p>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-header">
-        <p class="project-title">Project Title</p>
-        <div class="project-stats">
-          <img src="assets/svg/github-star.svg" alt="github-star"/>
-          <span class="ml-2 mr-4">6</span>
-          <img src="assets/svg/github-fork.svg" alt="github-fork"/>
-          <span class="ml-2">6</span>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>Descrição exemplo, exemplo exemplo de descrição.</p>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-header">
-        <p class="project-title">Project Title</p>
-        <div class="project-stats">
-          <img src="assets/svg/github-star.svg" alt="github-star"/>
-          <span class="ml-2 mr-4">6</span>
-          <img src="assets/svg/github-fork.svg" alt="github-fork"/>
-          <span class="ml-2">6</span>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>Descrição exemplo, exemplo exemplo de descrição.</p>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-header">
-        <p class="project-title">Project Title</p>
-        <div class="project-stats">
-          <img src="assets/svg/github-star.svg" alt="github-star"/>
-          <span class="ml-2 mr-4">6</span>
-          <img src="assets/svg/github-fork.svg" alt="github-fork"/>
-          <span class="ml-2">6</span>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>Descrição exemplo, exemplo exemplo de descrição.</p>
+        <p>{{project.description}}</p>
       </div>
     </div>
   </div>
