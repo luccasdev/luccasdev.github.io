@@ -1,7 +1,7 @@
 <div class="session" id="projects">
   <h3 class="title">Projetos Open Source</h3>
   <div class="projects">
-    <div *ngFor="let project of projects" class="project-container">
+    <div *ngFor="let project of projects" (click)="openRepository(project.url)" class="project-container">
       <div class="project-header">
         <p class="project-title">{{project.title}}</p>
         <div class="project-stats">
