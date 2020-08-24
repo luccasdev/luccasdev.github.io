@@ -1,0 +1,63 @@
+@import "src/shared/variables";
+
+.session {
+  background-color: #1E1E1E;
+  max-width: 100%;
+  padding: 2%;
+}
+
+.experience-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-flow: column;
+
+  .experience-period {
+    color: #00BE7A;
+  }
+  svg {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.start {
+  padding: 0.2em 0.5em;
+  background-color: #00BE7A;
+  color: #18191d;
+  font-size: 19px;
+  font-weight: 800;
+  margin-top: 1em;
+}
+
+.company-description {
+  display: flex;
+  flex-flow: column;
+  width: 45%;
+  justify-content: center;
+  text-align: center;
+  p {
+    width: 100%;
+  }
+  span {
+    font-weight: lighter;
+  }
+  .experience-technologies {
+    img {
+      margin: 0.4em;
+    }
+  }
+}
+
+@media screen and (max-width: $max-width-to-mobile-view) {
+  .company-description {
+    width: 100%;
+    .experience-technologies {
+      img {
+        max-width: 3em;
+      }
+    }
+  }
+}

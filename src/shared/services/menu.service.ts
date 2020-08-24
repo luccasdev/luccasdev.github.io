@@ -22,6 +22,15 @@ export class MenuService {
         top: document.getElementById('skills').offsetTop - 50,
         behavior: 'smooth'
       })
+    },
+    {
+      type: MenuTypeEnum.EXPERIENCE,
+      label: 'Experiência',
+      elementById: () => document.getElementById('experience'),
+      scrollIntoView: () => document.documentElement.scrollTo({
+        top: document.getElementById('experience').offsetTop - 50,
+        behavior: 'smooth'
+      })
     }
   ];
 
