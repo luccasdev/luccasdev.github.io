@@ -8,7 +8,7 @@ import {GitHubRepositoryDto} from '../../app/components/projects/project-objects
 })
 export class ProjectsService {
 
-  private readonly gitHubAPIUrl = 'http://api.github.com/users';
+  private readonly gitHubAPIUrl = 'https://api.github.com/users';
 
   constructor(private http: HttpClient) { }
 
