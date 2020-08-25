@@ -14,6 +14,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .project-container {
   background-color: #27272b;
   padding: 1em;
@@ -30,14 +31,20 @@
 
 .project-title {
   flex: 1;
-  font-size: 1.3em;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 0.3em;
 }
 
 .button-footer {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 12.7%;
+  padding-right: 11.3%;
+}
+
+.project-description {
+  font-size: 0.8em;
+  font-weight: 200;
+  padding: 1em;
 }
 
 @media screen and (max-width: $max-width-to-mobile-view) {

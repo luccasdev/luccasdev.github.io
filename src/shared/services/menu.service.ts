@@ -12,7 +12,9 @@ export class MenuService {
       type: MenuTypeEnum.ABOUT,
       label: 'Sobre',
       elementById: () => document.getElementById('about'),
-      scrollIntoView: () => document.documentElement.scrollTo({ behavior: 'smooth', top: 0})
+      scrollIntoView: () => document.documentElement.scrollTo({
+        behavior: 'smooth', top: 0
+      })
     },
     {
       type: MenuTypeEnum.SKILLS,

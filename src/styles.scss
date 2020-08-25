@@ -10,9 +10,14 @@ body {
   font-family: $default-font-family;
 }
 
+p {
+  margin: 0;
+}
+
 b {
   font-weight: bold;
 }
+
 .content-wrapper {
   padding: 30px;
 }
@@ -65,4 +70,23 @@ b {
   padding: 9px;
   margin: 23px 10px 10px;
   text-align: center;
+}
+
+
+.button-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  display: flex;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+}
+
+.row {
+  margin: 0;
 }

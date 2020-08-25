@@ -1,0 +1,52 @@
+@import "src/shared/variables";
+
+.title {
+  margin-bottom: 1em;
+}
+.session {
+  background-color: #1E1E1E;
+  max-width: 100%;
+  padding: 2%;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 10em;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.email-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-form-group {
+  flex: 1;
+  min-width: 47%;
+  label {
+    display: block;
+  }
+}
+
+.contact-input {
+  background-color: #070707;
+  border: none;
+  outline: none;
+  border-radius: 0.2em;
+  color: white;
+  width: 100%;
+  padding: 0.4em;
+  box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+  margin: 0;
+}
