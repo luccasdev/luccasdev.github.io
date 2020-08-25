@@ -4,6 +4,15 @@
   margin-left: $lateral-bar-width;
 }
 
+.footer {
+  padding: 3em 1em 1em;
+  text-align: center;
+  background-color: #1E1E1E;
+  span {
+    color: $primary-color;
+  }
+}
+
 @media screen and (max-width: $max-width-to-mobile-view) {
   .content {
     margin-left: 0;
