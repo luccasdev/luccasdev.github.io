@@ -42,6 +42,15 @@ export class MenuService {
         top: document.getElementById('projects').offsetTop - 50,
         behavior: 'smooth'
       })
+    },
+    {
+      type: MenuTypeEnum.EXPERIENCE,
+      label: 'Contato',
+      elementById: () => document.getElementById('contact'),
+      scrollIntoView: () => document.documentElement.scrollTo({
+        top: document.getElementById('contact').offsetTop - 50,
+        behavior: 'smooth'
+      })
     }
   ];
 
