@@ -41,6 +41,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   checkIfElementIsWithinViewport(element) {
     if (element) {
       const elementOffsets = element.getBoundingClientRect();
+      if (document.documentElement.scrollTop < 100) {
+          this.specificMenu = this.menuOptions[0];
+          return;
+      }
       return elementOffsets.bottom > 0 &&
         elementOffsets.right > 0 &&
         elementOffsets.left < (window.innerWidth || document.documentElement.clientWidth) &&

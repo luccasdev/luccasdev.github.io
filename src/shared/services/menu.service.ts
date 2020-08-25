@@ -13,7 +13,7 @@ export class MenuService {
       label: 'Sobre',
       elementById: () => document.getElementById('about'),
       scrollIntoView: () => document.documentElement.scrollTo({
-        top: document.getElementById('about').offsetTop - 150,
+        top: 0,
         behavior: 'smooth'
       })
     },
