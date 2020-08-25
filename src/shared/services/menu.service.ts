@@ -35,7 +35,7 @@ export class MenuService {
       })
     },
     {
-      type: MenuTypeEnum.EXPERIENCE,
+      type: MenuTypeEnum.PROJECTS,
       label: 'Projetos',
       elementById: () => document.getElementById('projects'),
       scrollIntoView: () => document.documentElement.scrollTo({
@@ -44,7 +44,7 @@ export class MenuService {
       })
     },
     {
-      type: MenuTypeEnum.EXPERIENCE,
+      type: MenuTypeEnum.CONTACT,
       label: 'Contato',
       elementById: () => document.getElementById('contact'),
       scrollIntoView: () => document.documentElement.scrollTo({
