@@ -1,11 +1,12 @@
 <app-navigation-bar *ngIf="specificMenu" [selectedNavigationMenu]="specificMenu" (changeNavigationEvent)="onChangeNavigation($event)"></app-navigation-bar>
+<div class="content">
+  <app-about-me></app-about-me>
 
-<app-about-me></app-about-me>
+  <app-skills></app-skills>
 
-<app-skills></app-skills>
+  <app-experience></app-experience>
 
-<app-experience></app-experience>
+  <app-projects></app-projects>
 
-<app-projects></app-projects>
-
-<app-contact></app-contact>
+  <app-contact></app-contact>
+</div>

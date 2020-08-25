@@ -2,25 +2,26 @@
 
 .navigation-bar {
   background-color: #232427;
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
+  display: block;
+  height: 100%;
   padding: 10px;
-}
-
-.navigation-about-me {
-  font-size: 1.2em;
-  flex: 0.6;
-  max-width: 16em;
+  position: fixed;
+  z-index: 1;
+  width: $lateral-bar-width;
+  justify-content: center;
 }
 
 .navigation-button-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 0.2;
-  .navigation-button:first-child {
-    margin-left: 0;
-  }
+  width: 100%;
+}
+
+.navigation-about-me {
+  font-size: 0.8em;
+  flex: 0.6;
+  max-width: 16em;
 }
 
 .navigation-button{
@@ -68,6 +69,7 @@
   justify-content: center;
   display: flex;
   padding: 10px;
+  height: fit-content;
 }
 
 .navigation-menu-button {
@@ -100,9 +102,9 @@
 .navigation-button-inside-menu {
   background-color: $primary-color;
   color: #232427;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
-  padding: 16px;
+  padding: 6.9px;
   min-width: 116px;
   margin: 23px 10px 10px;
   text-align: center;
@@ -128,6 +130,31 @@
 }
 
 @media screen and (max-width: $max-width-to-mobile-view) {
+  .navigation-bar {
+    background-color: #232427;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  .navigation-about-me {
+    font-size: 1.2em;
+    flex: 0.6;
+    max-width: 16em;
+  }
+
+  .navigation-button-group {
+    display: flex;
+    flex-direction: row;
+    flex: 0.2;
+    .navigation-button:first-child {
+      margin-left: 0;
+    }
+  }
+
   .navigation-bar {
     text-align: center;
     justify-content: center;
